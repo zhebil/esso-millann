@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("_head.html")
+</head>
+
+<body>
+    <!--Подключаем шапку сайта -->
+    @@include("_header.html")
+    <!--  -->
+    <h1 class="visually-hidden">Esso Millanni</h1>
+    <!--  -->
+    <main class="options main-padding">
+        <div class="container">
+            <div class="options__inner">
+                <section class="options__chart chart">
+                    <div class="chart__head">
+                        <div class="chart__select select">
+                            <select name="BTCUSD" class="visually-hidden">
+                                <option value="BTCUSD1">BTC | USD</option>
+                                <option value="BTCUSD2">BTC | USD2</option>
+                                <option value="BTCUSD3">BTC | USD3</option>
+                            </select>
+                            <button class="select__current">
+                                <span class="select__content">
+                                    <img src="./img/icons/btc.svg" alt="Bitcoin icon">
+                                    <span class="select__text">BTC | USD</span>
+                                </span>
+                                <span class="select__arrow"></span>
+                            </button>
+                            <ul class="select__list">
+                                <li class="select__item">
+                                    <button class="select__btn active">
+                                        <span class="select__content">
+                                            <img src="./img/icons/btc.svg" alt="Bitcoin icon">
+                                            <span class="select__text" data-value="BTCUSD1">BTC | USD</span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="select__item">
+                                    <button class="select__btn">
+                                        <span class="select__content">
+                                            <img src="./img/icons/btc.svg" alt="Bitcoin icon">
+                                            <span class="select__text" data-value="BTCUSD2">BTC | USD2</span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="select__item">
+                                    <button class="select__btn">
+                                        <span class="select__content">
+                                            <img src="./img/icons/btc.svg" alt="Bitcoin icon">
+                                            <span class="select__text" data-value="BTCUSD2">BTC | USD3</span>
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chart__head-item chart__head-item--wallet">
+                            <div class="chart__img"><img src="./img/icons/wallet.svg" width="30" height="30" alt="wallet icon"></div>
+                            <p class="chart__head-text">39073.00001</p>
+                        </div>
+                        <div class="chart__head-item chart__head-item--time">
+                            <div class="chart__img"><img src="./img/icons/time-back.svg" width="30" height="30" alt="time icon"></div>
+                            <p class="chart__head-text">00:39</p>
+                        </div>
+                    </div>
+                    <div class="chart__body">
+                        <img src="./img/grafik/Group 51.png" width="1050" height="725" alt="chart">
+                    </div>
+                </section>
+                <section class="options__block page-block investments">
+                    <div class="page-block__inner">
+                        <div class="investments__item">
+                            <div class="investments__head row">
+                                <h2 class="investments__title page-block__title">Open investments</h2>
+                                <div class="page-block__icon">
+                                    <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                </div>
+                            </div>
+                            <table class="investments__body">
+                                <tbody>
+                                    <tr class="investments__row">
+                                        <td class="investments__cell">
+                                            <time class="investments__heading">14:12</time>
+                                            <p class="investments__descr">Today</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading">BTCUSD</div>
+                                            <p class="investments__descr">Open</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading highlight">$185.00</div>
+                                            <p class="investments__descr">$100.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="investments__row">
+                                        <td class="investments__cell">
+                                            <time class="investments__heading">14:12</time>
+                                            <p class="investments__descr">Today</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading">BTCUSD</div>
+                                            <p class="investments__descr">Open</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading highlight">$185.00</div>
+                                            <p class="investments__descr">$100.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="investments__row">
+                                        <td class="investments__cell">
+                                            <time class="investments__heading">14:12</time>
+                                            <p class="investments__descr">Today</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading">BTCUSD</div>
+                                            <p class="investments__descr">Open</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading highlight">$185.00</div>
+                                            <p class="investments__descr">$100.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="investments__row">
+                                        <td class="investments__cell">
+                                            <time class="investments__heading">14:12</time>
+                                            <p class="investments__descr">Today</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading">BTCUSD</div>
+                                            <p class="investments__descr">Open</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading highlight">$185.00</div>
+                                            <p class="investments__descr">$100.00</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="investments__item">
+                            <div class="investments__head row">
+                                <h2 class="investments__title page-block__title">Closed investments</h2>
+                                <div class="page-block__icon">
+                                    <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                </div>
+                            </div>
+                            <table class="investments__body">
+                                <tbody>
+                                    <tr class="investments__row">
+                                        <td class="investments__cell">
+                                            <time class="investments__heading">14:12</time>
+                                            <p class="investments__descr">Today</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading">BTCUSD</div>
+                                            <p class="investments__descr">Closed</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading highlight">$185.00</div>
+                                            <p class="investments__descr">$100.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="investments__row">
+                                        <td class="investments__cell">
+                                            <time class="investments__heading">14:12</time>
+                                            <p class="investments__descr">Today</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading">BTCUSD</div>
+                                            <p class="investments__descr">Closed</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading highlight">$185.00</div>
+                                            <p class="investments__descr">$100.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="investments__row">
+                                        <td class="investments__cell">
+                                            <time class="investments__heading">14:12</time>
+                                            <p class="investments__descr">Today</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading">BTCUSD</div>
+                                            <p class="investments__descr">Closed</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading highlight">$185.00</div>
+                                            <p class="investments__descr">$100.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="investments__row">
+                                        <td class="investments__cell">
+                                            <time class="investments__heading">14:12</time>
+                                            <p class="investments__descr">Today</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading">BTCUSD</div>
+                                            <p class="investments__descr">Closed</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading highlight">$185.00</div>
+                                            <p class="investments__descr">$100.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="investments__row">
+                                        <td class="investments__cell">
+                                            <time class="investments__heading">14:12</time>
+                                            <p class="investments__descr">Today</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading">BTCUSD</div>
+                                            <p class="investments__descr">Closed</p>
+                                        </td>
+                                        <td class="investments__cell">
+                                            <div class="investments__heading highlight">$185.00</div>
+                                            <p class="investments__descr">$100.00</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section class="options__block page-block options-aside">
+                    <form class="page-block__inner">
+                        <div class="options-aside__inputs">
+                            <div class="options-aside__item">
+                                <div class="options-aside__row row">
+                                    <h3 class="options-aside__label">Amount</h3>
+                                    <div class="options-aside__icon">
+                                        <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                    </div>
+                                </div>
+                                <label class="input input--icon">
+                                    <span class="input__icon"><img src="./img/icons/usd-white.svg" width="9" height="17" alt="usd icon"></span>
+                                    <input class="input__input" type="number" name="amount" id="amount" value="100">
+                                </label>
+                            </div>
+                            <div class="options-aside__item">
+                                <div class="options-aside__row row">
+                                    <h3 class="options-aside__label">Type of option</h3>
+                                    <div class="options-aside__icon">
+                                        <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                    </div>
+                                </div>
+                                <div class="options-aside__select select select--typical">
+                                    <select name="BTCUSD" class="visually-hidden">
+                                        <option selected value="standart">standart</option>
+                                        <option value="turbo">turbo</option>
+                                    </select>
+                                    <button type="button" class="select__current">
+                                        <span class="select__content">
+                                            <img src="./img/icons/time.svg" alt="time icon">
+                                            <span class="select__text">Standart</span>
+                                        </span>
+                                        <span class="select__arrow"></span>
+                                        </button>
+                                    <ul class="select__list">
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn active">
+                                                <span class="select__content">
+                                                    <img src="./img/icons/time.svg" alt="Bitcoin icon">
+                                                    <span class="select__text" data-value="standart">Standart</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                    <img src="./img/icons/time.svg" alt="Bitcoin icon">
+                                                    <span class="select__text" data-value="turbo">Turbo</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="options-aside__item">
+                                <div class="options-aside__row row">
+                                    <h3 class="options-aside__label">Time</h3>
+                                    <div class="options-aside__icon">
+                                        <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                    </div>
+                                </div>
+                                <label class="input input--icon">
+                                    <span class="input__icon"><img src="./img/icons/time.svg" width="17" height="17" alt="usd icon"></span>
+                                    <input class="input__input" type="text" name="time" id="time" value="14:12">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="options-aside__outputs mt-40">
+                            <div class="options-aside__md-column">
+                                <div class="options-aside__item ">
+                                    <div class="options-aside__row row">
+                                        <h3 class="options-aside__label">Profit</h3>
+                                        <div class="options-aside__icon">
+                                            <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                        </div>
+                                    </div>
+                                    <p class="options-aside__value highlight">
+                                        85%
+                                    </p>
+                                </div>
+                                <div class="options-aside__item">
+                                    <div class="options-aside__row row">
+                                        <h3 class="options-aside__label">INCOME</h3>
+                                        <div class="options-aside__icon">
+                                            <img src="./img/icons/question.svg" width="20" height="20" alt="question icon">
+                                        </div>
+                                    </div>
+                                    <p class="options-aside__value highlight">
+                                        185 $
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="options-aside__buttons">
+                                <button type="button" class="btn options-aside__btn">
+                                    <img src="./img/icons/arrow-tri.svg" width="20" height="20" alt="arrow">
+                                    Higher
+                                </button>
+                                <button type="button" class="btn options-aside__btn">
+                                    <img class="rot180" src="./img/icons/arrow-tri.svg" width="20" height="20" alt="arrow">
+                                    Below
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.min.js"></script>
+</body>
+
+</html>

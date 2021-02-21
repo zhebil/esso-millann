@@ -1,0 +1,58 @@
+.desktop {
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.tablet {
+    @media (max-width: 650px), (min-width: 991px) {
+        display: none;
+    }
+}
+
+.tablet-desktop {
+    @media (max-width: 650px) {
+        display: none;
+    }
+}
+
+.mobile-tablet {
+    @media (min-width: 991px) {
+        display: none;
+    }
+}
+
+.mobile {
+    @media (min-width: 650px) {
+        display: none;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.highlight {
+    color: $color1;
+}
+
+.rot180 {
+    transform: rotate(180deg);
+}
+
+.mt-40 {
+    margin-top: 40px;
+}

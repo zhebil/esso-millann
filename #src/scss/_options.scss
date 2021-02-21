@@ -1,0 +1,244 @@
+.options {
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__chart {
+        margin-right: 50px;
+        flex: calc(100% - 670px) 0 1;
+        max-width: calc(100% - 670px);
+    }
+    &__block {
+        width: 300px;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+.chart {
+    position: relative;
+    &__head {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+    }
+    &__select {}
+    &__head-item {
+        display: flex;
+        align-items: center;
+        &--wallet {
+            padding: 0 30px;
+        }
+        &--time {
+            padding-left: 20px;
+        }
+    }
+    &__img {
+        margin-right: 14px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__head-text {}
+    &__body {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.investments {
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+    &__head {
+        width: fit-content;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    &__body {
+        width: 100%;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__cell {}
+    &__heading {
+        display: block;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 6px;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        color: #595957;
+    }
+}
+
+.options-aside {
+    &__item {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 18px;
+    }
+    &__row {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    &__icon {
+        margin-left: 10px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__label {}
+    &__select {}
+    &__value {
+        font-weight: 300;
+        font-size: 46px;
+        line-height: 45px;
+    }
+    &__buttons {
+        margin-top: 30px;
+    }
+    &__btn {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .options__inner {
+        flex-wrap: wrap;
+    }
+    .options__chart {
+        flex: 100%;
+        max-width: 100%;
+        order: 1;
+        margin-bottom: 60px;
+    }
+    .investments {
+        order: 3;
+    }
+    .options__block.options-aside {
+        order: 2;
+    }
+    .options__block {
+        width: 100%;
+        margin-bottom: 25px;
+        .page-block__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .options-aside {
+        .mt-40 {
+            margin-top: 30px;
+        }
+    }
+    .options__block:not(:last-child) {
+        margin: 0;
+    }
+    .options-aside__md-column {
+        display: flex;
+        >* {
+            flex: 50% 0 1;
+            max-width: 50%;
+        }
+    }
+    .options-aside__inputs,
+    .options-aside__outputs {
+        flex: 50% 0 1;
+        max-width: 50%;
+    }
+    .options-aside__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .options-aside__btn:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .investments__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .investments__item {
+        flex: 45% 0 1;
+        max-width: 45%;
+    }
+    .options__chart {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .chart {
+        &__head {
+            position: relative;
+            display: block;
+        }
+        &__select {
+            width: 100%;
+            .select__current {
+                width: 100%;
+            }
+            .select__btn {
+                width: 100%;
+            }
+            .select__list {
+                width: 100%;
+            }
+        }
+        &__head-item {
+            padding: 15px 0;
+            &--wallet {}
+            &--time {}
+        }
+        &__img {
+            img {}
+        }
+    }
+    .options__chart {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-block__inner {
+        flex-direction: column;
+    }
+    .options-aside__md-column {
+        flex-direction: column;
+    }
+    .options-aside__inputs,
+    .options-aside__outputs,
+    .options-aside__md-column>*,
+    .investments__item {
+        flex: 100% 0 1;
+        max-width: 100%;
+    }
+    .investments__item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}

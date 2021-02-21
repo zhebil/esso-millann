@@ -1,0 +1,18 @@
+// обнуление стилей
+@import "_stylenull.scss";
+// подключение шрифтов
+@import "_font-mixin.scss";
+@import "fonts.scss";
+// подключение переменных
+@import "_variables.scss";
+// служебные блоки
+@import "_utility.scss";
+@import "_litle-blocks.scss";
+// общие стили
+@import "_general.scss";
+@import "_layout.scss";
+// стили для шапки сайта
+@import "_header.scss";
+@import "_menu.scss";
+// стили для страницы Options
+@import "_options.scss";
