@@ -198,14 +198,23 @@
         margin-right: 0;
     }
     .table {
-        width: 1200px;
+        width: 1720px;
     }
     .table__wrapper {
         overflow: auto;
     }
+    .network__aside-top {
+        .options-aside__outputs {
+            max-width: 400px;
+            flex: 400px;
+        }
+    }
 }
 
 @media (max-width: 650px) {
+    .table {
+        width: 1200px;
+    }
     .chart {
         &__head {
             position: relative;
@@ -234,6 +243,20 @@
     }
     .options__chart {
         margin-bottom: 30px;
+    }
+    .network__dl {
+        display: block;
+    }
+    .network__dl-row:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .network__dt {
+        width: 100%;
+        margin: 0;
+    }
+    .network__dl-row {
+        flex: 100%;
+        max-width: 100%;
     }
 }
 

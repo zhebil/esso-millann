@@ -38,6 +38,7 @@
             transform: rotate(-135deg);
             transition: all 0.2s ease;
             z-index: 3;
+            margin-left: 22px;
             &.active {
                 top: 25px;
                 transform: rotate(45deg);

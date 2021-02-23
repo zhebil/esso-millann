@@ -52,8 +52,8 @@ function getSpoiler() {
 
 $(document).ready(function () {
   // scroll
-  jQuery('.scrollbar-outer').scrollbar();
-  
+  jQuery(".scrollbar-outer").scrollbar();
+
   // menu burger
   $burger.on("click", function () {
     $(this).find(".menu__burger").toggleClass("active");
@@ -73,5 +73,5 @@ $(document).ready(function () {
 
   // FAQ
   getSpoiler();
-});
-
+  
+ });
