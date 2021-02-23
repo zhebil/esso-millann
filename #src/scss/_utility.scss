@@ -56,3 +56,13 @@
 .mt-40 {
     margin-top: 40px;
 }
+
+.link {
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+    &:active {
+        color: #CDB185;
+    }
+}

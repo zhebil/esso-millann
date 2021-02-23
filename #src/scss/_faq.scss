@@ -1,0 +1,52 @@
+.faq {
+    padding-top: 110px;
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    &__item {
+        flex: calc(50% - 30px) 0 1;
+        max-width: calc(50% - 30px);
+        margin: 15px;
+        margin-bottom: 30px;
+        background: $block-bg;
+        border-radius: 6px;
+        padding: 32px 30px;
+        font-size: 16px;
+        line-height: 22px;
+        cursor: pointer;
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button {
+            display: block;
+            min-width: 13px;
+            width: 13px;
+            min-height: 13px;
+            height: 13px;
+            background: none;
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+            transform: rotate(-135deg);
+            transition: all 0.2s ease;
+            z-index: 3;
+            &.active {
+                top: 25px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    &__descr {
+        display: none;
+        margin-top: 30px;
+        line-height: normal;
+    }
+}

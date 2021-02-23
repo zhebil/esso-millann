@@ -1,0 +1,27 @@
+.investments__body-wrapper {
+    max-height: 260px;
+    overflow: auto;
+}
+
+.scrollbar-outer>.scroll-element {
+    background: #C4C4C4;
+    border-radius: 2px;
+}
+
+.scrollbar-outer>.scroll-element .scroll-element_track {
+    background: #C4C4C4;
+    border-radius: 2px;
+}
+
+.scrollbar-outer>.scroll-element .scroll-bar {
+    background: linear-gradient(225.92deg, #CDB185 2.19%, #EBD3AE 101.5%);
+    border-radius: 2px;
+}
+
+.scrollbar-outer>.scroll-element.scroll-y {
+    width: 4px;
+}
+
+.scrollbar-outer>.scroll-element.scroll-x {
+    height: 4px;
+}

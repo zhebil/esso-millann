@@ -1,0 +1,156 @@
+@media (max-width: 1600px) {
+    .plans__img {
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .plans__img {
+        img {
+            max-width: 150px;
+            height: auto;
+        }
+    }
+    .plans__dl {
+        flex: 70% 0 1;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .plans__img {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .plans__item {
+        flex: 100% 0 1;
+        max-width: 100vw;
+    }
+    .plans__dl {
+        flex: 50% 0 1;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .plans__body {
+        flex-wrap: wrap;
+    }
+    .plans__list,
+    .plans__aside {
+        flex: 100% 0 1;
+        max-width: 100%;
+    }
+    .aside-plans {
+        .mt-40 {
+            margin-top: 0px;
+        }
+        .page-block__inner--big {
+            padding: 30px;
+        }
+        .dl {
+            max-width: 220px;
+        }
+        .page-block__inner {
+            display: flex;
+            align-items: center;
+        }
+        .options-aside__p {
+            margin-top: 20px;
+        }
+    }
+    .form-aside {
+        .dl {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .dl__row {
+            flex: 45% 0 1;
+            max-width: 45%;
+        }
+    }
+    .tabs__nav {
+        margin-top: 30px;
+    }
+    .faq {
+        padding-top: 60px;
+    }
+    .faq__title {
+        margin-bottom: 30px;
+    }
+    .faq__item {
+        flex: 100% 0 1;
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .plans__list {
+        margin: 0;
+    }
+    .plans__item {
+        margin-left: 0;
+        margin-right: 0;
+        .page-block__inner {
+            position: relative;
+        }
+    }
+    .page-block__inner--big {
+        padding: 30px;
+    }
+    .plans__name {
+        margin-top: 105px;
+        margin-bottom: 20px;
+    }
+    .plans__dl {
+        max-width: 100%;
+        flex: 100%;
+        .dl__dt {
+            max-width: 100%;
+        }
+    }
+    .plans__img {
+        width: 100%;
+        top: 30px;
+        left: 0;
+        img {
+            max-height: 85px;
+            width: auto;
+        }
+    }
+    .plans__item-body {
+        position: static;
+    }
+    .plans__name {
+        width: 110%;
+    }
+}
+
+@media (max-width: 500px) {
+    .plans__item {
+        .dl__row {
+            display: block;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        .dl__dt {
+            margin-bottom: 8px;
+        }
+    }
+}

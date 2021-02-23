@@ -7,3 +7,41 @@
         padding: 0 20px;
     }
 }
+
+.main-padding {
+    padding-top: 58px;
+}
+
+.page-block {
+    background: $block-bg;
+    border-radius: 6px;
+    padding: 10px;
+    &__inner {
+        border: 2px solid #363636;
+        border-radius: 6px;
+        padding: 30px;
+        &--big {
+            padding: 50px;
+        }
+    }
+    &__title {}
+    &__icon {
+        position: absolute;
+        right: -30px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &--sm-full {
+        @media (max-width: 650px) {
+            margin-left: -20px!important;
+            margin-right: -20px!important;
+            position: relative;
+            width: 100vw;
+        }
+    }
+    .options__block {
+        margin-bottom: 30px;
+    }
+}

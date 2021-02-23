@@ -127,6 +127,13 @@
             margin-bottom: 10px;
         }
     }
+    &__p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    &__dl {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -190,6 +197,12 @@
     .options__chart {
         margin-right: 0;
     }
+    .table {
+        width: 1200px;
+    }
+    .table__wrapper {
+        overflow: auto;
+    }
 }
 
 @media (max-width: 650px) {
@@ -237,8 +250,18 @@
     .investments__item {
         flex: 100% 0 1;
         max-width: 100%;
+        width: 100%;
     }
     .investments__item:not(:last-child) {
         margin-bottom: 50px;
+    }
+    .aside-plans .page-block__inner--big {
+        padding: 40px;
+    }
+    .form-aside .dl {
+        display: block;
+    }
+    .form-aside .dl__row {
+        max-width: 100%;
     }
 }

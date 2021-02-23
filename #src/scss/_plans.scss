@@ -1,0 +1,57 @@
+.plans {
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        flex: calc(100% - 400px) 0 1;
+        max-width: calc(100% - 400px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin: 0 -15px;
+    }
+    &__item {
+        flex: calc(50% - 30px) 0 1;
+        max-width: calc(50% - 30px);
+        margin: 0 15px 30px;
+    }
+    &__name {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    &__item-body {
+        justify-content: space-between;
+    }
+    &__dl {
+        flex: 60% 0 1;
+    }
+    &__img {
+        position: absolute;
+        right: -30px;
+    }
+    &__aside {
+        max-width: 350px;
+        flex: 350px 0 1;
+    }
+    &__table {
+        margin-top: 50px;
+    }
+}
+
+.aside-plans {
+    margin-bottom: 30px;
+}
+
+.form-aside {
+    .btn {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}

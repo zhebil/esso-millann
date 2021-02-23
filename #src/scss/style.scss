@@ -8,11 +8,20 @@
 // служебные блоки
 @import "_utility.scss";
 @import "_litle-blocks.scss";
+// скролл
+@import "_scroll.scss";
 // общие стили
 @import "_general.scss";
 @import "_layout.scss";
+// стили для элементов форм
+@import "_form-style.scss";
 // стили для шапки сайта
 @import "_header.scss";
 @import "_menu.scss";
 // стили для страницы Options
 @import "_options.scss";
+// стили для страницы Plans
+@import "_plans.scss";
+@import "_faq.scss";
+// адаптив
+@import "_media.scss";
