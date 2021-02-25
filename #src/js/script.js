@@ -6,13 +6,14 @@ var $tabsButton = $(".tabs__button");
 var $faqItem = $(".faq__item");
 // tabs
 function getTabs() {
+  $(".tabs__item:not(.active)").hide(1)
   $tabsButton.on("click", function () {
     var parentBlock = $(this).closest(".tabs");
     var buttons = parentBlock.find(".tabs__button");
     var tabsItems = parentBlock.find(".tabs__item");
     var activeTabItem = parentBlock.find(".tabs__item.active");
     var activeIndex = $(this).data("idx") - 1;
-    activeTabItem.hide(200);
+    activeTabItem.hide(200).removeClass("active");
     tabsItems.eq(activeIndex).addClass("active");
     tabsItems.eq(activeIndex).show(200);
     buttons.removeClass("active");
@@ -50,6 +51,14 @@ function getSpoiler() {
   });
 }
 
+function filePreview() {
+  $("input[type='file']").on("change", function (e) {
+    const file = e.target.files[0];
+    const path = (window.URL ? URL : webkitURL).createObjectURL(file);
+    $(this).parent().css("background", `url(${path}) center/contain no-repeat`);
+  });
+}
+
 $(document).ready(function () {
   // scroll
   jQuery(".scrollbar-outer").scrollbar();
@@ -73,5 +82,7 @@ $(document).ready(function () {
 
   // FAQ
   getSpoiler();
-  
- });
+
+  //
+  filePreview();
+});

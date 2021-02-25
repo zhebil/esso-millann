@@ -111,7 +111,7 @@
 .tabs {
     &__list {}
     &__item {
-        display: none;
+        // display: none;
         &.active {
             display: block;
         }

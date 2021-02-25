@@ -1,0 +1,93 @@
+.personal {
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav {
+        flex: 220px 0 1;
+        max-width: 220px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        >* {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-transform: none;
+            font-weight: normal;
+        }
+    }
+    &__tabs-list {
+        flex: calc(100% - 250px) 0 1;
+        max-width: calc(100% - 250px);
+    }
+    &__tabs-item {
+        .page-block__inner {
+            min-height: 550px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__column {
+        flex: calc(50% - 25px) 0 1;
+        max-width: calc(50% - 25px);
+        display: flex;
+        justify-content: space-between;
+    }
+    &__subcolumn {
+        flex: calc(50% - 25px) 0 1;
+        max-width: calc(50% - 25px);
+    }
+    &__input-item {
+        margin-bottom: 20px;
+    }
+    &__select {
+        width: 100%;
+        .select__current {
+            width: 100%;
+        }
+        &.select--typical .select__list {
+            width: 100%;
+        }
+    }
+    &__button {
+        margin-top: auto;
+        width: calc(25% - 34px);
+    }
+    &__photo {
+        max-width: 560px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__photo-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    &__img {
+        cursor: pointer;
+        border-radius: 6px;
+        width: 150px;
+        height: 150px;
+        display: block;
+        background: #585858 url(../img/icons/photo.svg) center no-repeat;
+    }
+    &__buttons-right {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        button {
+            margin: 0 10px;
+        }
+    }
+}
+
+.personal-data {}

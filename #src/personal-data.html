@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("_head.html")
+    <title>Personal data</title>
+</head>
+
+<body>
+    <!--Подключаем шапку сайта -->
+    @@include("_header.html")
+    <!--  -->
+    <main class="main-padding">
+        <h1 class="visually-hidden"> Personal account settings </h1>
+        <div class="container">
+            <div class="tabs personal__tabs">
+                <nav class="tabs__nav personal__nav">
+                    <button data-idx="1" class="tabs__button tablet-desktop btn active">Personal data</button>
+                    <button data-idx="2" class="tabs__button tablet-desktop btn">Password</button>
+                    <button data-idx="3" class="tabs__button tablet-desktop btn">Settings</button>
+                    <button data-idx="4" class="tabs__button tablet-desktop btn">Verification</button>
+                    <div class="select personal__select mobile select--typical personal__mobile-nav">
+                        <button type="button" class="select__current">
+                            <span class="select__content">
+                                <span class="select__text">Personal data</span>
+                            </span>
+                            <span class="select__arrow"></span>
+                            </button>
+                        <ul class="select__list">
+                            <li class="select__item">
+                                <button type="button" data-idx="1" class="select__btn tabs__button active">
+                                    <span class="select__content">
+                                        <span class="select__text">Personal data</span>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="select__item">
+                                <button type="button" data-idx="2" class="select__btn tabs__button">
+                                    <span class="select__content">
+                                        <span class="select__text">Password</span>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="select__item">
+                                <button type="button" data-idx="3" class="select__btn tabs__button">
+                                    <span class="select__content">
+                                        <span class="select__text">Settings</span>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="select__item">
+                                <button type="button" data-idx="4" class="select__btn tabs__button">
+                                    <span class="select__content">
+                                        <span class="select__text">Verification</span>
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="tabs__list personal__tabs-list">
+                    <article class="tabs__item personal__tabs-item active">
+                        <div class="page-block personal-data page-block--sm-full">
+                            <form class="page-block__inner page-block__inner--big">
+                                <h2 class="personal__title title">Personal data</h2>
+                                <div class="personal__inputs">
+                                    <div class="personal__column">
+                                        <div class="personal__subcolumn">
+                                            <div class="personal__input-item">
+                                                <label for="mail" class="input__label">
+                                                    E-mail
+                                                </label>
+                                                <input class="input input__input" type="mail" name="mail" id="mail">
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="name" class="input__label">
+                                                    Name *
+                                                </label>
+                                                <input class="input input__input" type="text" name="name" id="name" required>
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="surname" class="input__label">
+                                                    Surname *
+                                                </label>
+                                                <input class="input input__input" type="text" name="surname" id="surname" required>
+                                            </div>
+                                        </div>
+                                        <div class="personal__subcolumn">
+                                            <div class="personal__input-item">
+                                                <label for="city" class="input__label">
+                                                    City
+                                                </label>
+                                                <input class="input input__input" type="text" name="city" id="city">
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="midle-name" class="input__label">
+                                                    Middle name *
+                                                </label>
+                                                <input class="input input__input" type="text" name="midle-name" id="midle-name" required>
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="country" class="input__label">
+                                                    Country *
+                                                </label>
+                                                <div class="select personal__select select--typical">
+                                                    <select name="country" class="visually-hidden">
+                                                        <option selected value="RU">RU</option>
+                                                        <option value="USA">USA</option>
+                                                    </select>
+                                                    <button type="button" class="select__current">
+                                                        <span class="select__content">
+                                                            <span class="select__text">RU</span>
+                                                        </span>
+                                                        <span class="select__arrow"></span>
+                                                        </button>
+                                                    <ul class="select__list">
+                                                        <li class="select__item">
+                                                            <button type="button" class="select__btn active">
+                                                                <span class="select__content">
+                                                                    <span class="select__text" data-value="RU">RU</span>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="select__item">
+                                                            <button type="button" class="select__btn">
+                                                                <span class="select__content">
+                                                                    <span class="select__text" data-value="USA">USA</span>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="personal__column">
+                                        <div class="personal__subcolumn">
+                                            <div class="personal__input-item">
+                                                <label for="phone" class="input__label">
+                                                    Phone number
+                                                </label>
+                                                <input class="input input__input" type="phone" name="phone" id="phone">
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="birth" class="input__label">
+                                                    Date of Birth
+                                                </label>
+                                                <input class="input input__input" type="date" name="birth" id="birth">
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="p-serial" class="input__label">
+                                                    Passport serial
+                                                </label>
+                                                <input class="input input__input" type="text" name="p-serial" id="p-serial">
+                                            </div>
+                                        </div>
+                                        <div class="personal__subcolumn">
+                                            <div class="personal__input-item">
+                                                <label for="p-number" class="input__label">
+                                                    Passport number
+                                                </label>
+                                                <input class="input input__input" type="text" name="p-number" id="p-number">
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="png" class="input__label">
+                                                    Phone number Gender
+                                                </label>
+                                                <input class="input input__input" type="text" name="png" id="png">
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="gender" class="input__label">
+                                                    Gender
+                                                </label>
+                                                <div class="select personal__select select--typical">
+                                                    <select name="gender" class="visually-hidden">
+                                                        <option selected value="male">male</option>
+                                                        <option value="female">female</option>
+                                                    </select>
+                                                    <button type="button" class="select__current">
+                                                        <span class="select__content">
+                                                            <span class="select__text">male</span>
+                                                        </span>
+                                                        <span class="select__arrow"></span>
+                                                        </button>
+                                                    <ul class="select__list">
+                                                        <li class="select__item">
+                                                            <button type="button" class="select__btn active">
+                                                                <span class="select__content">
+                                                                    <span class="select__text" data-value="male">male</span>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="select__item">
+                                                            <button type="button" class="select__btn">
+                                                                <span class="select__content">
+                                                                    <span class="select__text" data-value="female">female</span>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="personal__button btn">SAVE</button>
+                            </form>
+                        </div>
+                    </article>
+                    <article class="tabs__item personal__tabs-item">
+                        <div class="page-block personal-data page-block--sm-full">
+                            <form class="page-block__inner page-block__inner--big">
+                                <h2 class="personal__title title">Password change</h2>
+                                <div class="personal__inputs">
+                                    <div class="personal__column">
+                                        <div class="personal__subcolumn personal__subcolumn--md-full">
+                                            <div class="personal__input-item">
+                                                <label for="old-pass" class="input__label">
+                                                    Old password *
+                                                </label>
+                                                <input class="input input__input" type="password" name="old-pass" id="old-pass" required>
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="new-pass" class="input__label">
+                                                    New password *
+                                                </label>
+                                                <input class="input input__input" type="password" name="new-pass" id="new-pass" required>
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="pass-repeat" class="input__label">
+                                                    New password repeat *
+                                                </label>
+                                                <input class="input input__input" type="password" name="pass-repeat" id="pass-repeat" required>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <button class="personal__button btn">MODIFY</button>
+                            </form>
+                        </div>
+                    </article>
+                    <article class="tabs__item personal__tabs-item">
+                        <div class="page-block personal-data page-block--sm-full">
+                            <form class="page-block__inner page-block__inner--big">
+                                <h2 class="personal__title title">Settings</h2>
+                                <div class="personal__inputs">
+                                    <div class="personal__column">
+                                        <div class="personal__subcolumn personal__subcolumn--md-full">
+                                            <div class="personal__input-item">
+                                                <label for="time" class="input__label">
+                                                    Time zone
+                                                </label>
+                                                <div class="select personal__select select--typical">
+                                                    <select name="time" class="visually-hidden">
+                                                        <option selected value="kiev">Europe/Kiev +3:00</option>
+                                                        <option value="moskow">Russian/Moskow +4:00</option>
+                                                    </select>
+                                                    <button type="button" class="select__current">
+                                                        <span class="select__content">
+                                                            <span class="select__text">Europe/Kiev +3:00</span>
+                                                        </span>
+                                                        <span class="select__arrow"></span>
+                                                        </button>
+                                                    <ul class="select__list">
+                                                        <li class="select__item">
+                                                            <button type="button" class="select__btn active">
+                                                                <span class="select__content">
+                                                                    <span class="select__text" data-value="kiev">Europe/Kiev +3:00</span>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="select__item">
+                                                            <button type="button" class="select__btn">
+                                                                <span class="select__content">
+                                                                    <span class="select__text" data-value="moskow">Russian/Moskow +4:00</span>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="lang" class="input__label">
+                                                    Language
+                                                </label>
+                                                <div class="select personal__select select--typical">
+                                                    <select name="lang" class="visually-hidden">
+                                                        <option selected value="russian">Русский</option>
+                                                        <option value="englich">Englich</option>
+                                                    </select>
+                                                    <button type="button" class="select__current">
+                                                        <span class="select__content">
+                                                            <span class="select__text">Русский</span>
+                                                        </span>
+                                                        <span class="select__arrow"></span>
+                                                        </button>
+                                                    <ul class="select__list">
+                                                        <li class="select__item">
+                                                            <button type="button" class="select__btn active">
+                                                                <span class="select__content">
+                                                                    <span class="select__text" data-value="russian">Русский</span>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="select__item">
+                                                            <button type="button" class="select__btn">
+                                                                <span class="select__content">
+                                                                    <span class="select__text" data-value="englich">Englich</span>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="personal__input-item">
+                                                <label for="color" class="input__label">
+                                                    Interface color
+                                                </label>
+                                                <div class="select personal__select select--typical">
+                                                    <select name="color" class="visually-hidden">
+                                                        <option selected value="black">Black</option>
+                                                        <option value="white">White</option>
+                                                    </select>
+                                                    <button type="button" class="select__current">
+                                                        <span class="select__content">
+                                                            <span class="select__text">Black</span>
+                                                        </span>
+                                                        <span class="select__arrow"></span>
+                                                        </button>
+                                                    <ul class="select__list">
+                                                        <li class="select__item">
+                                                            <button type="button" class="select__btn active">
+                                                                <span class="select__content">
+                                                                    <span class="select__text" data-value="black">Black</span>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                        <li class="select__item">
+                                                            <button type="button" class="select__btn">
+                                                                <span class="select__content">
+                                                                    <span class="select__text" data-value="white">White</span>
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <button class="personal__button btn">MODIFY</button>
+                            </form>
+                        </div>
+                    </article>
+                    <article class="tabs__item personal__tabs-item">
+                        <div class="page-block personal-data page-block--sm-full">
+                            <form class="page-block__inner page-block__inner--big">
+                                <h2 class="personal__title title">Verification</h2>
+                                <div class="personal__inputs">
+                                    <div class="personal__column">
+                                        <div class="personal__photo">
+                                            <p class="personal__photo-text">To pass identification, upload photo with a passport in your hand and a piece of paper on which is written Esso MIllanni and the date.</p>
+                                            <label class="personal__img"><input class="visually-hidden" type="file" name="photo-with-p" id="photo-with-p"></label>
+                                        </div>
+                                    </div>
+                                    <div class="personal__column">
+                                        <div class="personal__photo">
+                                            <p class="personal__photo-text">Passport first page</p>
+                                            <label class="personal__img"><input class="visually-hidden" type="file" name="photo-p" id="photo-p"></label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="personal__buttons-right">
+                                    <button type="button" class="personal__button btn">Save</button>
+                                    <button type="submit" class="personal__button btn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    @@include("_scripts.html")
+</body>
+
+</html>

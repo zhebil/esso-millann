@@ -41,6 +41,22 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .personal__tabs {
+        display: block;
+    }
+    .personal__nav {
+        max-width: 100%;
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .personal__tabs-list {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 1200px) {
     .plans__body {
         flex-wrap: wrap;
@@ -130,6 +146,55 @@
     }
 }
 
+@media (max-width:1024px) {
+    .personal__nav {
+        flex-wrap: wrap;
+        max-width: 450px;
+        .tabs__button {
+            max-width: 220px;
+        }
+    }
+    .personal__inputs {
+        flex-direction: column;
+    }
+    .personal__column {
+        flex: 100% 0 1;
+        max-width: 100%;
+    }
+    .personal__button {
+        width: calc(50% - 25px);
+        margin-top: 10px;
+    }
+    .personal__subcolumn--md-full {
+        flex: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        >* {
+            flex: calc(50% - 25px) 0 1;
+            max-width: calc(50% - 25px);
+        }
+    }
+    .personal__tabs-item .page-block__inner {
+        min-height: 410px;
+    }
+    .personal__buttons-right {
+        margin-top: 30px;
+        justify-content: space-between;
+        button {
+            flex: calc(50% - 10px) 0 1;
+            max-width: calc(50% - 10px);
+            margin: 0;
+        }
+    }
+    .personal__column:not(:last-child) {
+        .personal__img {
+            margin-bottom: 50px;
+        }
+    }
+}
+
 @media (max-width: 650px) {
     .plans__list {
         margin: 0;
@@ -169,6 +234,43 @@
     }
     .plans__name {
         width: 110%;
+    }
+    .personal__column {
+        flex-wrap: wrap;
+    }
+    .personal__subcolumn,
+    .personal__subcolumn--md-full>* {
+        flex: 100% 0 1;
+        max-width: 100%;
+    }
+    .personal__button {
+        width: 100%;
+    }
+    .personal__buttons-right {
+        flex-direction: column;
+        button {
+            max-width: 100%;
+            flex: 50px 0 1;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .personal__column:not(:last-child) .personal__img {
+        margin-bottom: 30px;
+    }
+    .personal__nav {
+        max-width: 100%;
+        margin-top: 0;
+    }
+    .personal__mobile-nav {
+        .select__current {
+            background: $bg;
+        }
+        .tabs__button {
+            max-width: 100%;
+            width: 100%;
+        }
     }
 }
 

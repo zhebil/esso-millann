@@ -45,6 +45,7 @@
         top: 60px;
         left: 0;
         z-index: 2;
+        background: $block-bg;
     }
     &__item {
         &:not(:last-child) {
@@ -165,9 +166,14 @@
         align-items: center;
         justify-content: center;
     }
+    &__label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
     &__input {
         width: 100%;
-        height: 100%;
+        height: 50px;
         background: none;
         color: #fff;
         font-size: 16px;
