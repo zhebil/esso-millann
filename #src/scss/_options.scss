@@ -199,6 +199,12 @@
     }
     .table {
         width: 1720px;
+        &--min {
+            width: 100%;
+        }
+        &--mid {
+            width: 900px;
+        }
     }
     .table__wrapper {
         overflow: auto;
@@ -214,6 +220,12 @@
 @media (max-width: 650px) {
     .table {
         width: 1200px;
+        &--min {
+            width: 100%;
+        }
+        &--mid {
+            width: 800px;
+        }
     }
     .chart {
         &__head {
@@ -257,6 +269,12 @@
     .network__dl-row {
         flex: 100%;
         max-width: 100%;
+    }
+    .partner__title {
+        margin-bottom: 20px;
+    }
+    .partner__discription {
+        margin-bottom: 30px;
     }
 }
 

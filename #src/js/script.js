@@ -4,6 +4,7 @@ var $selectBtn = $(".select__current");
 var $selectItems = $(".select__btn");
 var $tabsButton = $(".tabs__button");
 var $faqItem = $(".faq__item");
+var $mediaName = $(".media__name")
 // tabs
 function getTabs() {
   $(".tabs__item:not(.active)").hide(1)
@@ -59,6 +60,14 @@ function filePreview() {
   });
 }
 
+function mediaSpoiler () {
+$mediaName.on("click", function () {
+  var parent = $(this).closest(".media__subitem");
+  var content = parent.find(".media__content")
+  content.slideToggle(200)
+})
+}
+
 $(document).ready(function () {
   // scroll
   jQuery(".scrollbar-outer").scrollbar();
@@ -83,6 +92,11 @@ $(document).ready(function () {
   // FAQ
   getSpoiler();
 
-  //
+  // preview load file
   filePreview();
+
+  //media spoiler
+  mediaSpoiler()
+  // add tooltips
+  $('.tooltip-js').tooltipster(); 
 });
