@@ -1,0 +1,69 @@
+.statistic {
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__body {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 450px;
+        &--full {
+            width: 100%;
+        }
+    }
+    &__input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__select {
+        position: relative;
+        &--l {
+            .select__current,
+            &.select--typical .select__list,
+            &.select {
+                width: 300px;
+            }
+            &.select--typical .select__btn {
+                width: 298px;
+            }
+        }
+        &--s {
+            .select__current,
+            &.select--typical .select__list,
+            &.select {
+                width: 120px;
+            }
+            &.select--typical .select__btn {
+                width: 118px;
+            }
+        }
+        &--m {
+            .select__current,
+            &.select--typical .select__list,
+            &.select {
+                width: 150px;
+            }
+            &.select--typical .select__btn {
+                width: 148px;
+            }
+        }
+    }
+    &__button {
+        margin-top: 30px;
+    }
+}
+
+.select {
+    &--typical {}
+    &__current {}
+    &__content {}
+    &__text {}
+    &__arrow {}
+    &__list {}
+    &__item {}
+    &__btn {}
+}

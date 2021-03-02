@@ -33,7 +33,7 @@
         top: 20px;
         transform: rotate(-135deg);
         transition: all 0.2s ease;
-        z-index: 3;
+        z-index: 1;
         &--active {
             top: 25px;
             transform: rotate(45deg);

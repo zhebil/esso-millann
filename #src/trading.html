@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("_head.html")
+    <title>Personal data</title>
+</head>
+
+<body>
+    <!--Подключаем шапку сайта -->
+    @@include("_header.html")
+    <!--  -->
+    <main class="main-padding">
+        <div class="container">
+            <div class="page-block statistic page-block--sm-full">
+                <form class="page-block__inner  page-block__inner--big">
+                    <h1 class="statistic__title title">
+                        Trading history
+                    </h1>
+                    <div class="statistic__body">
+                        <div class="statistic__item">
+                            <div class="statistic__input">
+                                <div class="statistic__select mr-30 select select--typical">
+                                    <select name="input" class="visually-hidden">
+                                        <option selected value="input-1">All assets</option>
+                                        <option value="input-2">All assets 2</option>
+                                    </select>
+                                    <button type="button" class="select__current">
+                                        <span class="select__content">
+                                            <span class="select__text">All assets</span>
+                                        </span>
+                                        <span class="select__arrow"></span>
+                                        </button>
+                                    <ul class="select__list">
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn active">
+                                                <span class="select__content">
+                                                    <span class="select__text" data-value="input-1">All assets</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="input-2">All assets 2</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="statistic__select statistic__select--s select select--typical">
+                                    <select name="input" class="visually-hidden">
+                                        <option selected value="input-1">All</option>
+                                        <option value="input-2">not All</option>
+                                    </select>
+                                    <button type="button" class="select__current">
+                                        <span class="select__content">
+                                            <span class="select__text">All</span>
+                                        </span>
+                                        <span class="select__arrow"></span>
+                                        </button>
+                                    <ul class="select__list">
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn active">
+                                                <span class="select__content">
+                                                    <span class="select__text" data-value="input-1">All</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="input-2">not All</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistic__item statistic__item--full">
+                            <label for="" class="input__label">
+                                From
+                            </label>
+                            <div class="statistic__input">
+                                <div class="statistic__select statistic__select--s select select--typical">
+                                    <select name="from-day" class="visually-hidden">
+                                        <option selected value="date">Date</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <button type="button" class="select__current">
+                                        <span class="select__content">
+                                            <span class="select__text">Date</span>
+                                        </span>
+                                        <span class="select__arrow"></span>
+                                    </button>
+                                    <ul class="select__list">
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn active">
+                                               <span class="select__content">
+                                                   <span class="select__text" data-value="input-1">Input 1</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                   <span class="select__text" data-value="1">1</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                 <span class="select__text" data-value="2">2</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                <span class="select__text" data-value="3">3</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                 <span class="select__text" data-value="4">4</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                    <span class="select__text" data-value="5">5</span>
+                                               </span> 
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                    <span class="select__text" data-value="6">6</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                    <span class="select__text" data-value="7">7</span>
+                                               </span>
+                                            </button>
+                                        </li>
+
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                    <span class="select__text" data-value="8">8</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                    <span class="select__text" data-value="9">9</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="10">10</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="11">11</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="12">12</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="13">13</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="14">14</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="15">15</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="16">16</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="17">17</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="18">18</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="19">19</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="20">20</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="21">21</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="22">22</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="23">23</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="24">24</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="25">25</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="26">26</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="27">27</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="28">28</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="29">29</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="30">30</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="31">31</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="statistic__select statistic__select--m select select--typical">
+                                    <select name="from-month" class="visually-hidden">
+                                        <option selected value="">Month</option>
+                                        <option selected value='1'>Janaury</option>
+                                        <option value='2'>February</option>
+                                        <option value='3'>March</option>
+                                        <option value='4'>April</option>
+                                        <option value='5'>May</option>
+                                        <option value='6'>June</option>
+                                        <option value='7'>July</option>
+                                        <option value='8'>August</option>
+                                        <option value='9'>September</option>
+                                        <option value='10'>October</option>
+                                        <option value='11'>November</option>
+                                        <option value='12'>December</option>
+                                    </select>
+                                    <button type="button" class="select__current">
+                                        <span class="select__content">
+                                            <span class="select__text">Month</span>
+                                        </span>
+                                        <span class="select__arrow"></span>
+                                        </button>
+                                    <ul class="select__list">
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                                <span class="select__content">
+                                                    <span class="select__text" data-value="">Month</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="1">Janaury</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="2">February</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="3">March</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="4">April</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="5">May</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="6">June</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="7">July</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="8">August</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="9">September</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="10">October</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="11">November</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="12">December</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="statistic__select statistic__select--m select select--typical">
+                                    <select name="from-year" class="visually-hidden">
+                                        <option selected value="">Year</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                    </select>
+                                    <button type="button" class="select__current">
+                                        <span class="select__content">
+                                            <span class="select__text">Year</span>
+                                        </span>
+                                        <span class="select__arrow"></span>
+                                        </button>
+                                    <ul class="select__list">
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                    <span class="select__text" data-value="">Year</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                    <span class="select__text" data-value="2020">2020</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="2021">2021</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistic__item statistic__item--full">
+                            <label for="" class="input__label">
+                                Until
+                            </label>
+                            <div class="statistic__input">
+                                <div class="statistic__select statistic__select--s select select--typical">
+                                    <select name="to-day" class="visually-hidden">
+                                        <option selected value="date">Date</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    <button type="button" class="select__current">
+                                        <span class="select__content">
+                                            <span class="select__text">Date</span>
+                                        </span>
+                                        <span class="select__arrow"></span>
+                                    </button>
+                                    <ul class="select__list">
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn active">
+                                               <span class="select__content">
+                                                   <span class="select__text" data-value="Date">Date</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                   <span class="select__text" data-value="1">1</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                 <span class="select__text" data-value="2">2</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                <span class="select__text" data-value="3">3</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                 <span class="select__text" data-value="4">4</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                    <span class="select__text" data-value="5">5</span>
+                                               </span> 
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                    <span class="select__text" data-value="6">6</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                    <span class="select__text" data-value="7">7</span>
+                                               </span>
+                                            </button>
+                                        </li>
+
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                    <span class="select__text" data-value="8">8</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                                    <span class="select__text" data-value="9">9</span>
+                                               </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="10">10</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="11">11</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="12">12</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="13">13</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="14">14</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="15">15</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="16">16</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="17">17</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="18">18</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="19">19</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="20">20</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="21">21</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="22">22</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="23">23</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="24">24</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="25">25</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="26">26</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="27">27</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="28">28</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="29">29</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="30">30</span>
+                                               </span></button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                               <span class="select__content">
+                                               <span class="select__text" data-value="31">31</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="statistic__select statistic__select--m select select--typical">
+                                    <select name="to-month" class="visually-hidden">
+                                        <option selected value="">Month</option>
+                                        <option selected value='1'>Janaury</option>
+                                        <option value='2'>February</option>
+                                        <option value='3'>March</option>
+                                        <option value='4'>April</option>
+                                        <option value='5'>May</option>
+                                        <option value='6'>June</option>
+                                        <option value='7'>July</option>
+                                        <option value='8'>August</option>
+                                        <option value='9'>September</option>
+                                        <option value='10'>October</option>
+                                        <option value='11'>November</option>
+                                        <option value='12'>December</option>
+                                    </select>
+                                    <button type="button" class="select__current">
+                                        <span class="select__content">
+                                            <span class="select__text">Month</span>
+                                        </span>
+                                        <span class="select__arrow"></span>
+                                        </button>
+                                    <ul class="select__list">
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn ">
+                                                <span class="select__content">
+                                                    <span class="select__text" data-value="">Month</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="1">Janaury</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="2">February</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="3">March</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="4">April</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="5">May</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="6">June</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="7">July</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="8">August</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="9">September</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="10">October</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="11">November</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="12">December</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="statistic__select statistic__select--m select select--typical">
+                                    <select name="to-year" class="visually-hidden">
+                                        <option selected value="">Year</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                    </select>
+                                    <button type="button" class="select__current">
+                                        <span class="select__content">
+                                            <span class="select__text">Year</span>
+                                        </span>
+                                        <span class="select__arrow"></span>
+                                        </button>
+                                    <ul class="select__list">
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                    <span class="select__text" data-value="">Year</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                    <span class="select__text" data-value="2020">2020</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li class="select__item">
+                                            <button type="button" class="select__btn">
+                                                <span class="select__content">
+                                                   <span class="select__text" data-value="2021">2021</span>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button statistic__button btn">CHOOSE</button>
+                    </div>
+                </form>
+            </div>
+            <div class="tabs plans__table">
+                <div class="tabs__list">
+                    <div class="tabs__item active">
+                        <div class="table__wrapper scrollbar-outer">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td>Date</td>
+                                        <td>Asset</td>
+                                        <td>Forecast</td>
+                                        <td>Amount</td>
+                                        <td>Rate</td>
+                                        <td>Expiry time</td>
+                                        <td>Expiration level</td>
+                                        <td>Profit</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><time>07.02.2021 14:32:11</time></td>
+                                        <td>BTCUSD</td>
+                                        <td>Higher </td>
+                                        <td>$1.00</td>
+                                        <td>38664.00002</td>
+                                        <td><time>07.02.2021 14:34:02</time></td>
+                                        <td>38650.00000</td>
+                                        <td>$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><time>07.02.2021 14:32:11</time></td>
+                                        <td>BTCUSD</td>
+                                        <td>Higher </td>
+                                        <td>$1.00</td>
+                                        <td>38664.00002</td>
+                                        <td><time>07.02.2021 14:34:02</time></td>
+                                        <td>38650.00000</td>
+                                        <td>$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><time>07.02.2021 14:32:11</time></td>
+                                        <td>BTCUSD</td>
+                                        <td>Higher </td>
+                                        <td>$1.00</td>
+                                        <td>38664.00002</td>
+                                        <td><time>07.02.2021 14:34:02</time></td>
+                                        <td>38650.00000</td>
+                                        <td>$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><time>07.02.2021 14:32:11</time></td>
+                                        <td>BTCUSD</td>
+                                        <td>Higher </td>
+                                        <td>$1.00</td>
+                                        <td>38664.00002</td>
+                                        <td><time>07.02.2021 14:34:02</time></td>
+                                        <td>38650.00000</td>
+                                        <td>$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><time>07.02.2021 14:32:11</time></td>
+                                        <td>BTCUSD</td>
+                                        <td>Higher </td>
+                                        <td>$1.00</td>
+                                        <td>38664.00002</td>
+                                        <td><time>07.02.2021 14:34:02</time></td>
+                                        <td>38650.00000</td>
+                                        <td>$0.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="table__caption">Revenue for the selected period: -782$ 12</p>
+                    </div>
+                    <div class="tabs__item">
+                        <p>In development</p>
+                    </div>
+                </div>
+                <nav class="tabs__nav pl-30">
+                    <button data-idx="1" class="tabs__button btn btn--squere active">1</button>
+                    <button data-idx="2" class="tabs__button btn btn--squere">2</button>
+                </nav>
+            </div>
+        </div>
+    </main>
+    @@include("_scripts.html")
+</body>
+
+</html>
