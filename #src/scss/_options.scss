@@ -55,6 +55,7 @@
 
 .investments {
     &__item {
+        margin-right: -15px;
         &:not(:last-child) {
             margin-bottom: 50px;
         }
@@ -70,6 +71,9 @@
     }
     &__body {
         width: 100%;
+    }
+    &__body-wrapper {
+        padding-right: 5px!important;
     }
     &__row {
         display: flex;
