@@ -80,6 +80,7 @@ $(document).ready(function () {
   $(document).on("click", function (e) {
     if (!$(e.target).closest(".menu").length) {
       $menu.slideUp(200);
+      $burger.find(".menu__burger").removeClass("active");
     }
   });
 

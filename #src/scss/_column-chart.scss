@@ -1,0 +1,63 @@
+.column-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    // width: 100%;
+    width: 1270px;
+    height: 350px;
+    &:after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        display: block;
+        position: absolute;
+        background: #6C6C6C;
+        bottom: 30px;
+    }
+    &__item {
+        position: relative;
+        width: 66px;
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-right: 66px;
+        }
+    }
+    &__percent {
+        top: 0;
+        font-size: 16px;
+        line-height: 16px;
+        color: $color1;
+        position: absolute;
+    }
+    &__column {
+        background: linear-gradient(225.92deg, #CDB185 2.19%, #EBD3AE 101.5%);
+        border-radius: 4px 4px 0px 0px;
+        width: 100%;
+        height: calc(100% - 60px);
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            animation: flicker 0.7s linear infinite;
+        }
+    }
+    &__money {
+        bottom: 0;
+        position: absolute;
+        font-size: 16px;
+        line-height: 16px;
+        color: $color1;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
